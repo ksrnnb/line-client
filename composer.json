@@ -1,18 +1,14 @@
 {
-    "name": "pds/skeleton",
-    "type": "standard",
-    "description": "Standard for PHP package skeletons.",
-    "homepage": "https://github.com/php-pds/skeleton",
-    "license": "CC-BY-SA-4.0",
-    "autoload": {
-        "psr-4": {
-            "Pds\\Skeleton\\": "src/"
-        }
+    "name": "ksrnnb/line-client",
+    "description": "send line message",
+    "type": "library",
+    "require": {
+        "linecorp/line-bot-sdk": "^7.1"
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Pds\\Skeleton\\": "tests/"
-        }
-    },
-    "bin": ["bin/pds-skeleton"]
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.6"
+    }
 }
