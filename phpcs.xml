@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<ruleset name="PSR12/Laravel">
+    <description>PSR12 compliant rules and settings for Laravel</description>
+
+    <arg name="extensions" value="php" />
+
+    <!-- PSR12を適用 -->
+    <rule ref="PSR12">
+
+        <!-- 除外するルール -->
+        <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace" />
+        <exclude name="PSR12.Traits.UseDeclaration.MultipleImport" />
+
+    </rule>
+
+    <!-- 色をつけるオプション -->
+    <arg name="colors" />
+
+    <!-- Option, p: 進捗表示, s: エラー表示時にルールを表示する -->
+    <arg value="ps" />
+
+    <!-- 除外するディレクトリ -->
+    <exclude-pattern>./vendor</exclude-pattern>
+</ruleset>
